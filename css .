@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.gameInfo {
+    text-align: center; /* Center the text */
+    margin: 20px auto; /* Add margin to create spacing */
+    font-family: 'Poppins', sans-serif; /* Use a clean and modern font */
+}
+
+.gameInfo h1 {
+    font-size: 2.5rem; /* Make the title larger */
+    font-weight: bold; /* Bold the title */
+    margin-bottom: 10px; /* Add spacing below the title */
+    color: #333; /* Dark gray text color */
+}
+
+.gameInfo .info {
+    font-size: 1.5rem; /* Slightly smaller than the title */
+    margin-top: 10px; /* Add spacing above the turn info */
+    color: #555; /* Light gray text color */
+}
+
+#reset {
+    display: inline-block; /* Make the button inline and block-level */
+    margin-top: 15px; /* Add spacing above the button */
+    padding: 10px 20px; /* Adjust padding for the button */
+    font-size: 1.2rem; /* Larger button text size */
+    font-weight: bold; /* Bold text on the button */
+    background-color: rgb(37, 9, 37); /* Dark purple background */
+    color: white; /* White text */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#reset:hover {
+    background-color: rgb(57, 19, 57); /* Lighter purple on hover */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: rgb(37, 9, 37);
+    color: white;
+    height: 65px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.gameContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    gap: 2px;
+    margin: 20px 0;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color:blue;
+}
+
+.box:hover {
+    background-color: rgb(242, 234, 250);
+}
+
+.boxtext {
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+}
+
